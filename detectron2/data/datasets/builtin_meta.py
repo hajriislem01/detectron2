@@ -37,7 +37,7 @@ COCO_CATEGORIES = [
 ]
 
 # fmt: off
-#COCO_PERSON_KEYPOINT_NAMES = (
+COCO_PERSON_KEYPOINT_NAMES = (
     "nose",
     "left_eye", "right_eye",
     "left_ear", "right_ear",
@@ -51,7 +51,7 @@ COCO_CATEGORIES = [
 # fmt: on
 
 # Pairs of keypoints that should be exchanged under horizontal flipping
-#COCO_PERSON_KEYPOINT_FLIP_MAP = (
+COCO_PERSON_KEYPOINT_FLIP_MAP = (
     ("left_eye", "right_eye"),
     ("left_ear", "right_ear"),
     ("left_shoulder", "right_shoulder"),
@@ -63,7 +63,7 @@ COCO_CATEGORIES = [
 )
 
 # rules for pairs of keypoints to draw a line between, and the line color to use.
-#KEYPOINT_CONNECTION_RULES = [
+KEYPOINT_CONNECTION_RULES = [
     # face
     ("left_ear", "left_eye", (102, 204, 255)),
     ("right_ear", "right_eye", (51, 153, 255)),
@@ -85,7 +85,7 @@ COCO_CATEGORIES = [
 
 # All Cityscapes categories, together with their nice-looking visualization colors
 # It's from https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/helpers/labels.py  # noqa
-#CITYSCAPES_CATEGORIES = [
+CITYSCAPES_CATEGORIES = [
     {"color": (128, 64, 128), "isthing": 0, "id": 7, "trainId": 0, "name": "road"},
     {"color": (244, 35, 232), "isthing": 0, "id": 8, "trainId": 1, "name": "sidewalk"},
     {"color": (70, 70, 70), "isthing": 0, "id": 11, "trainId": 2, "name": "building"},
@@ -108,7 +108,7 @@ COCO_CATEGORIES = [
 ]
 
 # fmt: off
-#ADE20K_SEM_SEG_CATEGORIES = [
+ADE20K_SEM_SEG_CATEGORIES = [
     "wall", "building", "sky", "floor", "tree", "ceiling", "road, route", "bed", "window ", "grass", "cabinet", "sidewalk, pavement", "person", "earth, ground", "door", "table", "mountain, mount", "plant", "curtain", "chair", "car", "water", "painting, picture", "sofa", "shelf", "house", "sea", "mirror", "rug", "field", "armchair", "seat", "fence", "desk", "rock, stone", "wardrobe, closet, press", "lamp", "tub", "rail", "cushion", "base, pedestal, stand", "box", "column, pillar", "signboard, sign", "chest of drawers, chest, bureau, dresser", "counter", "sand", "sink", "skyscraper", "fireplace", "refrigerator, icebox", "grandstand, covered stand", "path", "stairs", "runway", "case, display case, showcase, vitrine", "pool table, billiard table, snooker table", "pillow", "screen door, screen", "stairway, staircase", "river", "bridge, span", "bookcase", "blind, screen", "coffee table", "toilet, can, commode, crapper, pot, potty, stool, throne", "flower", "book", "hill", "bench", "countertop", "stove", "palm, palm tree", "kitchen island", "computer", "swivel chair", "boat", "bar", "arcade machine", "hovel, hut, hutch, shack, shanty", "bus", "towel", "light", "truck", "tower", "chandelier", "awning, sunshade, sunblind", "street lamp", "booth", "tv", "plane", "dirt track", "clothes", "pole", "land, ground, soil", "bannister, banister, balustrade, balusters, handrail", "escalator, moving staircase, moving stairway", "ottoman, pouf, pouffe, puff, hassock", "bottle", "buffet, counter, sideboard", "poster, posting, placard, notice, bill, card", "stage", "van", "ship", "fountain", "conveyer belt, conveyor belt, conveyer, conveyor, transporter", "canopy", "washer, automatic washer, washing machine", "plaything, toy", "pool", "stool", "barrel, cask", "basket, handbasket", "falls", "tent", "bag", "minibike, motorbike", "cradle", "oven", "ball", "food, solid food", "step, stair", "tank, storage tank", "trade name", "microwave", "pot", "animal", "bicycle", "lake", "dishwasher", "screen", "blanket, cover", "sculpture", "hood, exhaust hood", "sconce", "vase", "traffic light", "tray", "trash can", "fan", "pier", "crt screen", "plate", "monitor", "bulletin board", "shower", "radiator", "glass, drinking glass", "clock", "flag", # noqa
 ]
 # After processed by `prepare_ade20k_sem_seg.py`, id 255 means ignore
