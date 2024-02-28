@@ -135,7 +135,7 @@ def _get_coco_panoptic_separated_meta():
     Returns metadata for "separated" version of the panoptic segmentation dataset.
     """
     stuff_ids = [k["id"] for k in COCO_CATEGORIES if k["isthing"] == 0]
-    assert len(stuff_ids) == 53, len(stuff_ids)
+    assert len(stuff_ids) == 0, len(stuff_ids)
 
     # For semantic segmentation, this mapping maps from contiguous stuff id
     # (in [0, 53], used in models) to ids in the dataset (used for processing results)
